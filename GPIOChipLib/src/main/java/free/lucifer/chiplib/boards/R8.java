@@ -184,6 +184,7 @@ public class R8 implements IOBoard {
 
     public static enum ChipPin {
         PWM0(ChipPort.B, 0, 2),
+        I2S_MCLK(ChipPort.B, 0, 5),
         LCD_D2(ChipPort.D, 0, 2),
         LCD_D3(ChipPort.D, 0, 3),
         LCD_D4(ChipPort.D, 0, 4),
@@ -218,6 +219,8 @@ public class R8 implements IOBoard {
         CSID5(ChipPort.E, 1, 1),
         CSID6(ChipPort.E, 1, 2),
         CSID7(ChipPort.E, 1, 3),
+//        UART1_RX(ChipPort.G, 0, 4),
+        
         LRADC(ChipPort.NONE, 0, 0);
 
         public final ChipPort port;
@@ -241,6 +244,15 @@ public class R8 implements IOBoard {
             D(new int[]{PIO + 0x6c, PIO + 0x70, PIO + 0x74, PIO + 0x78}, PIO + 0x7c, new int[]{PIO + 0x80, PIO + 0x84}, new int[]{PIO + 0x88, PIO + 0x8c}),
             E(new int[]{PIO + 0x90, PIO + 0x94, PIO + 0x98, PIO + 0x9c}, PIO + 0xa0, new int[]{PIO + 0xa4, PIO + 0xa8}, new int[]{PIO + 0xac, PIO + 0xb0}),
             F(new int[]{PIO + 0xb4, PIO + 0xb8, PIO + 0xbc, PIO + 0xc0}, PIO + 0xc4, new int[]{PIO + 0xc8, PIO + 0xcc}, new int[]{PIO + 0xd0, PIO + 0xd4});
+//        	G(new int[]{PIO + 0xd8, 
+//        			    PIO + 0xdc, 
+//        			    PIO + 0xe0, 
+//        			    PIO + 0xe4},  // cfg 
+//                        PIO + 0xe8, // data
+//              new int[]{PIO + 0xeC, 
+//            		    PIO + 0xf0}, // driver
+//              new int[]{PIO + 0xf4, 
+//            		    PIO + 0xf8}); // pull
 
             public final int[] cfg;
             public final int data;
