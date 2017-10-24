@@ -185,6 +185,7 @@ public class R8 implements IOBoard {
     public static enum ChipPin {
         PWM0(ChipPort.B, 0, 2),
         I2S_MCLK(ChipPort.B, 0, 5),
+        I2S_DI(ChipPort.B, 1, 1),
         LCD_D2(ChipPort.D, 0, 2),
         LCD_D3(ChipPort.D, 0, 3),
         LCD_D4(ChipPort.D, 0, 4),

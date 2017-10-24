@@ -271,6 +271,7 @@ public class Chip implements IOBoard, Runnable {
     public static enum Pin {
         PWM0(new PinMode[]{PinMode.INPUT, PinMode.OUTPUT, PinMode.PWM}, R8.class),
         I2S_MCLK(new PinMode[]{PinMode.INPUT}, R8.class),
+        I2S_DI(new PinMode[]{PinMode.INPUT}, R8.class),
         UART1_RX(new PinMode[]{PinMode.INPUT}, R8.class),
         LRADC(new PinMode[]{PinMode.ANALOG}, R8.class),
         LCD_D2(new PinMode[]{PinMode.INPUT}, R8.class),
