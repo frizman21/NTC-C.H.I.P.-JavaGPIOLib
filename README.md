@@ -21,7 +21,7 @@ Add maven dependency into your project.
   <dependency>
     <groupId>free.lucifer</groupId>
     <artifactId>chiplib</artifactId>
-    <version>0.1.2</version>
+    <version>0.1.3-SNAPSHOT</version>
   </dependency>
   ...
 </dependencies>
